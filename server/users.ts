@@ -40,3 +40,13 @@ export async function deleteUser(id: string) {
         return { error: "Failed to delete user" }
     }
 }
+
+
+// This file defines server-side functions for managing users in the database using Drizzle ORM.
+// It includes functions to get all users, create a new user, update an existing user, and delete a user by ID.
+// Each function interacts with the `users` table defined in the schema and handles potential errors by logging them and returning appropriate messages.
+
+// Example usage:
+// import { getUsers, createUser, updateUser, deleteUser } from './server/users';
+// const allUsers = await getUsers(); // Fetch all users
+// await createUser({ email: 'example@example.com', username: 'exampleUser', password: 'securePassword' });
